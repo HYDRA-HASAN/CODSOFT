@@ -1,2 +1,0 @@
-game.txt
-game.txt.txt
