@@ -1,9 +1,10 @@
-//
+//TO-DO LIST 
 #include <iostream>
-#include <vector>
 #include <fstream>
-#include <sstream> // Added for string stream manipulation
-#include <limits> // Added for numeric_limits
+#include <sstream>
+#include <vector>
+#include <ctime>
+#include <limits>
 
 using namespace std;
 
@@ -54,6 +55,21 @@ void printList(const vector<string>& totalList, const string& fileName) {
     for (size_t i = 0; i < totalList.size(); ++i) {
         cout << GREEN << (i + 1) << ". " << RESET << totalList[i] << "\n"; // Color the task numbers
     }
+}
+
+// Function to add a task with current date
+void addTaskWithDate(vector<string>& totalList) {
+    cout << "Enter new task: ";
+    cin.ignore(); // Ignore the newline character in the buffer
+    string task;
+    getline(cin, task); // Allow input with spaces
+
+    time_t now = time(0);
+    tm* ltm = localtime(&now);
+
+    stringstream ss;
+    ss << "[" << 1900 + ltm->tm_year << "/" << 1 + ltm->tm_mon << "/" << ltm->tm_mday << "] " << task;
+    totalList.push_back(ss.str());
 }
 
 int main() {
@@ -126,11 +142,7 @@ int main() {
         }
 
         if (choice == 1) {
-            string newItem;
-            cout << "Enter new task: ";
-            cin.ignore(); // Ignore the newline character in the buffer
-            getline(cin, newItem); // Allow input with spaces
-            totalList.push_back(newItem);
+            addTaskWithDate(totalList);
         } else if (choice == 2) {
             int itemNumber = 0;
             cout << "Enter task number to delete: ";
