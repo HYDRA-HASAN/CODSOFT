@@ -7,8 +7,16 @@ void printBoard() {
     cout << "  1 2 3\n";
     for (int i = 0; i < 3; ++i) {
         cout << i + 1 << " ";
-        for (int j = 0; j < 3; ++j)
-            cout << board[i][j] << (j < 2 ? "|" : "");
+        for (int j = 0; j < 3; ++j) {
+            if (board[i][j] == 'X') {
+                cout << "\033[1;31m" << board[i][j] << "\033[0m"; // Red color
+            } else if (board[i][j] == 'O') {
+                cout << "\033[1;33m" << board[i][j] << "\033[0m"; // Orange color
+            } else {
+                cout << board[i][j];
+            }
+            cout << (j < 2 ? "|" : "");
+        }
         cout << "\n" << (i < 2 ? "  -----\n" : "\n");
     }
 }
