@@ -1,3 +1,4 @@
+#include <SFML/Graphics.hpp>
 #include <iostream>
 #include <climits>
 using namespace std;
@@ -11,7 +12,7 @@ void printBoard() {
         for (int j = 0; j < 3; ++j) {
             if (board[i][j] == 'X') {
                 cout << "\033[1;31m" << board[i][j] << "\033[0m"; // Red color
-            } else if (board[i][j] == 'O') {
+            } else if (board[i][j] == 'O') {~
                 cout << "\033[1;33m" << board[i][j] << "\033[0m"; // Orange color
             } else {
                 cout << board[i][j];

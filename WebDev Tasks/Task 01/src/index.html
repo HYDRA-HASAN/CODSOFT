@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hassan | Portfolio</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            background-color: rgb(7, 7, 45);
+            color: white;
+            font-family: "Helvetica Neue",Helvetica;
+        }
+        
+        main hr{
+            border: 0;
+            background: #9c97f1;
+            height: 1.2px;
+            margin: 40px 84px;
+        }
+        nav{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            background-color:  rgb(32, 32, 105);
+            height: 70px;
+        }
+    
+ nav ul{
+            display: flex;
+            justify-content: right;
+        }
+        nav ul li{
+            list-style: none;
+            margin:0 25px;
+        }
+        
+        nav ul li a{
+            text-decoration: none;
+            color: white;
+        }
+        nav ul li a:hover{
+            color: lavender;
+            font-size: 1.04rem;
+        }
+        .left{
+            font-size: 1.5rem;
+        }
+        .firstSection{
+            display: flex;
+            justify-content: space-around;
+            margin: 120px 0;
+        }
+        .firstSection > div{
+            width: 30%;
+            align-items: center;
+        }
+        .leftSection{
+            font-size: 2rem;
+            margin: 80px 0 ;
+        }
+        .leftSection .buttons{
+            padding: 50px 0;
+        }
+        .leftSection .btn{
+            padding: 12px;
+            background: #1e2167;
+            color: white;
+            border: 2px solid white;
+            border-radius: 6px;
+            font-size: 15px;
+            cursor: pointer;        
+        }
+        .rightSection img{
+            width: 100%;
+            margin: 0;
+        }
+        .purple{
+            color: rgb(176, 119, 229);
+        }
+        .text-gray{
+            color: gray;
+        }
+        #element{
+            color: rgb(176, 119, 229);
+        }
+        .secondSection{
+            max-width: 80vw;
+            margin: auto; 
+            height: 80vh;
+        }
+        .secondSection h1{
+            font-size: 1.7rem;
+        }
+        .secondSection .box{
+            background-color: white;
+            width: 80vw;
+            height: 2px;
+            margin: 56px 0;
+            display: flex;;
+        }
+        .secondSection .vertical{
+            height: 105px;
+            width: 1px;
+            background-color: white;
+            margin: 0 140px;
+        }
+        .secondSection .vertical2{
+            height: 111px;
+            width: 1px;
+            background-color: white;
+            margin: 0 140px;
+        }
+        .image-top{
+            width: 37px;
+            position: relative;
+            top: -40px;
+            left: -9px;
+        }
+        .image-top2{
+            width: 31px;
+            position: relative;
+            top: -40px;
+            left: -9px;
+        }
+        .image-top3{
+            width: 48px;
+            position: relative;
+            top: -50px;
+            left: -9px;
+        }
+        .vertical-title{
+            position: relative;
+            top: 75px;
+            width: 150px;
+        }
+        .vertical-desc{
+            position: relative;
+            top: 86px;
+            color: gray;
+            width: 150px;
+            font-size: 9px;
+        }
+        footer{
+            background-color: #0e0e1a;
+        }
+        .footer{
+            display: flex;
+            padding: 23px 122px;
+            justify-content: space-evenly;
+        }
+        .footer ul{
+            list-style: none;
+        }
+        .footer > div{
+            width: 223px;
+        }
+        footer .footer-rights{
+            text-align: center;
+            color: gray;
+            padding: 12px 0;
+        }
+        .container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.G {
+    width: 49px;
+    position: relative;
+    top: 15px;
+    left: -9px;
+}
+
+.L {
+    width: 48px;
+    position: relative;
+    top: 15px;
+    left: 25px;
+}
+
+.I {
+    width: 71px;
+    position: relative;
+    top: 3px;
+    left: -54px;
+}
+
+.X {
+    width: 88px;
+    position: relative;
+    top: 3px;
+    left: -119px;
+}
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="left">Hassan's Portfolio</div>
+            <div class="right">
+                <ul>
+                    <li><a href="https://www.linkedin.com/in/hassan-yaseen-cloud?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><img class="L"src="LinkedIn_icon_circle.svg.png" alt=""></a></li>
+                    <li><a href="https://github.com/HYDRA-HASAN"><img class="G"src="github-512.webp" alt=""></a></li>
+                    <li><a href="https://www.instagram.com/hasan.18y/"><img class="I"src="insta.png" alt=""></a></li>
+                    <li><a href="https://twitter.com/HYDRA_HASSAN"><img class="X"src="X.png" alt=""></a></li>
+                </ul>
+            </div>
+
+        </nav>
+    </header>
+
+    <main>
+        <section class="firstSection">
+            <div class="leftSection">
+                Hi, My name is <span class="purple">Hassan</span> 
+                <div>& I am a passionate</div> 
+                <span id="element"></span>
+                <div class="buttons">
+                    <a href="https://drive.google.com/file/d/1lW434xGHCjTI0mMJZRJtbhK7jLo87bho/view?usp=sharing" download>
+                        <button class="btn">Download Resume</button>
+                    </a>
+                </div>
+                
+            </div>
+            <div class="rightSection">
+                <img src="bgg.png" alt="">
+            </div>
+        </section>
+<hr>
+        <section class="secondSection">
+            <span class="text-gray">What I have studied & currently studying</span>
+            <h1>Study Experience</h1>
+            <div class="box">
+                <div class="vertical">
+                    <img class="image-top" src="school.webp" alt="">
+                    <div class="vertical-title">
+                        MATRIC 
+                        <div>(2011-2021)</div>
+                    </div>
+                    <div class="vertical-desc">
+                        I have completed my Matric in General Science from Usman Public School System in 2021 with A-ONE Grade.
+                    </div>
+                </div>
+                <div class="vertical"> <img class="image-top" src="College.png" alt="">
+                    <div class="vertical-title">
+                        INTERMIDIATE
+                        <div>(2021-2023)</div>
+                    </div>
+                    <div class="vertical-desc">
+                        I completed my INTERMIDIATE in Computer Science from Govt.Degree College Gulshan-E-Iqbal Block-07 with A Grade.
+                    </div>
+                </div>
+                <div class="vertical2">
+                    <img class="image-top3" src="uni.png" alt="">
+                    <div class="vertical-title">
+                       Electronics Engr.
+                        <div>(2023-2027)</div>
+                    </div>
+                    <div class="vertical-desc">
+                        I am currently studying Electronics Engineering from NED Univeristy.
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top2" src="Governor.png" alt="">
+                    <div class="vertical-title">
+                        Generative AI Engr.
+                        <div>(2024-2025)</div>
+                    </div>
+                    <div class="vertical-desc">
+                        I am currently enrolled in "The Cloud Applied Generative AI Engineering (GenEng)" certification program.
+                    </div>
+                </div>
+            </div>
+
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer">
+            <div class="footer-first">
+               <h3>Hassan's Developer Portfolio</h3>
+            </div>
+        </div>
+        <div class="footer-rights">
+           Copyright © www.hassansportfolio.com | All rights reserved
+        </div>
+    </footer>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <!-- Setup and start animation! -->
+  <script>
+    var typed = new Typed('#element', {
+      strings: ['Undergrad Electronics Student', '@ NED|27', 'Generative Ai Trainee (GIAIC)','E-Sports lover', 'Jr. WebDev(learning)'],
+      typeSpeed: 40,
+    });
+  </script>
+</body>
+</html>
