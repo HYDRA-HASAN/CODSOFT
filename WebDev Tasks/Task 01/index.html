@@ -53,13 +53,36 @@
             display: flex;
             justify-content: space-around;
             margin: 120px 0;
+            position: relative;
         }
+        .firstSection::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('Hassan.jpg'); /* Replace 'Hassan.jpg' with the actual path to your image */
+    background-repeat: no-repeat; /* Prevent image repetition */
+    background-size:  contain ; /* Ensure the image covers the entire section */
+    background-position: 13.4% 0;
+    opacity: 0.2; /* Adjust the opacity as per your preference */
+    z-index: 1;
+}
+
+.leftSection {
+    position: relative;
+    z-index: 1;
+    padding: 20px;
+    /* Add other styles as needed */
+}
+        
         .firstSection > div{
             width: 30%;
             align-items: center;
         }
         .leftSection{
-            font-size: 2rem;
+            font-size: 1.75rem;
             margin: 80px 0 ;
         }
         .leftSection .buttons{
@@ -204,9 +227,9 @@
             <div class="right">
                 <ul>
                     <li><a href="https://www.linkedin.com/in/hassan-yaseen-cloud?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><img class="L"src="LinkedIn_icon_circle.svg.png" alt=""></a></li>
-                    <li><a href="https://github.com/HYDRA-HASAN"><img class="G"src="github-512.webp" alt=""></a></li>
-                    <li><a href="https://www.instagram.com/hasan.18y/"><img class="I"src="insta.png" alt=""></a></li>
-                    <li><a href="https://twitter.com/HYDRA_HASSAN"><img class="X"src="X.png" alt=""></a></li>
+                    <li><a href="https://github.com/HYDRA-HASAN"><img class="G"src="github.webp" alt=""></a></li>
+                    <li><a href="https://www.instagram.com/hasan.18y/"><img class="I"src="insta (1).png" alt=""></a></li>
+                    <li><a href="https://twitter.com/HYDRA_HASSAN"><img class="X"src="X (1).png" alt=""></a></li>
                 </ul>
             </div>
 
@@ -221,13 +244,14 @@
                 <span id="element"></span>
                 <div class="buttons">
                     <a href="https://drive.google.com/file/d/1lW434xGHCjTI0mMJZRJtbhK7jLo87bho/view?usp=sharing" download>
+                        
                         <button class="btn">Download Resume</button>
                     </a>
                 </div>
                 
             </div>
             <div class="rightSection">
-                <img src="bgg.png" alt="">
+                <img src="tt.png" alt="">
             </div>
         </section>
 <hr>
@@ -293,7 +317,7 @@
     <!-- Setup and start animation! -->
   <script>
     var typed = new Typed('#element', {
-      strings: ['Undergrad Electronics Student', '@ NED|27', 'Generative Ai Trainee (GIAIC)','E-Sports lover', 'Jr. WebDev(learning)'],
+      strings: ['Undergrad Electronics Student', '@ NED|27', 'Generative Ai Trainee ','E-Sports lover', 'Jr. WebDev(learning)'],
       typeSpeed: 40,
     });
   </script>
